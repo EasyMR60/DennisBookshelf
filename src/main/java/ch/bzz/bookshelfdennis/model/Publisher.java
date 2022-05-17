@@ -1,33 +1,45 @@
 package ch.bzz.bookshelfdennis.model;
 
-import java.util.List;
-
+/**
+ * a book publisher
+ */
 public class Publisher {
     private String publisherUUID;
     private String publisher;
-    private List<Book> Booklist;
 
+    /**
+     * gets publisherUUID
+     *
+     * @return value of publisherUUID
+     */
     public String getPublisherUUID() {
         return publisherUUID;
     }
 
+    /**
+     * sets publisherUUID
+     *
+     * @param publisherUUID the value to set
+     */
     public void setPublisherUUID(String publisherUUID) {
         this.publisherUUID = publisherUUID;
     }
 
+    /**
+     * gets publisher
+     *
+     * @return value of publisher
+     */
     public String getPublisher() {
         return publisher;
     }
 
+    /**
+     * sets publisher
+     *
+     * @param publisher the value to set
+     */
     public void setPublisher(String publisher) {
         this.publisher = publisher;
-    }
-
-    public List<Book> getBooklist() {
-        return Booklist;
-    }
-
-    public void setBooklist(List<Book> booklist) {
-        Booklist = booklist;
     }
 }
